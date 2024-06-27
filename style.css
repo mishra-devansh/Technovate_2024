@@ -1,0 +1,675 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif; /* Use a dynamic font like Poppins */
+    margin: 0;
+    padding: 0;
+    margin-top: -110px;
+
+    /* background: linear-gradient(135deg, #2196f3, #f44336); Cool blue gradient */
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #010a01;
+  }
+
+  
+  
+
+  section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  
+
+  .header {
+    padding: 0px 0px;
+    margin-top: -10px;
+  
+    /* display: flex; Arrange logos horizontally */
+  }
+
+#logo {
+width: 150px;
+top: 0;
+margin-top: -10px;
+}
+#home {
+/* background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
+background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity here */
+ background-size: cover;
+background-position: center;
+background-blend-mode: overlay; /* Ensure the overlay blends with the background image */
+
+
+}
+
+#nav-menu-container {
+padding: 10px 0;
+}
+
+.nav-menu {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+.nav-menu li {
+margin: 0 10px;
+}
+
+.nav-menu li a {
+display: block;
+padding: 10px 20px;
+color: #edcf10; /* Add this line to make the font color white */
+text-decoration: none;
+transition: background-color 0.3s ease;
+font-weight: bold;
+}
+
+.nav-menu li a:hover {
+text-decoration: underline;
+background-color: #f5f4ee; /* Add this line to make the background color white */
+font-weight: bolder;
+}
+.technovate-logo {
+float: right;
+margin-right: 20px;
+width: 120px; /* adjust the width as needed */
+height: 120px; /* adjust the height as needed */
+}
+
+.amity-header {
+margin-left: 50px;
+}
+
+
+
+
+  .event-details {
+    margin-top: 50px;
+    font-size: 25px; /* Reduced font size for readability */
+  }
+
+  .event-details h2,
+  .event-details p {
+    margin: 5px 0; /* Consistent spacing for elements within event-details */
+  }
+
+  .event-details u {
+    text-decoration: none; /* Remove underline from university name */
+    /* Use a subtle background color instead */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px; /* Add padding for background effect */
+    border-radius: 5px; /* Add subtle rounded corners */
+  }
+
+  .neonText {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa,
+      0 0 151px #0fa;
+  }
+
+  .event-details h1 {
+    font-size: 4.2rem;
+    animation: flicker 1.5s infinite alternate;
+  }
+
+  /* Flickering animation */
+  @keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+      text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+
+    20%,
+    24%,
+    55% {
+      text-shadow: none;
+    }
+  }
+
+  /* Additional styling */
+
+  .event-details h2 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    margin-top: 20vh;
+  }
+
+  .event-details h1,
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  #about {
+  background-image: url('tech.png.webp');
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+  background-blend-mode: overlay; /* Ensure the overlay blends with the background image */
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; 
+}
+
+
+#about h2 {
+color: #fcc203;
+}
+
+#about p {
+color: #ccc;
+}
+
+/* You can adjust other styles as needed */
+
+
+  .schedule {
+    margin-top: 50px;
+    font-size: 22px; /* Increased schedule font size */
+  }
+
+
+
+
+  .whereandwhen {
+width: 100%;
+display: flex;
+margin-top: 20px;
+justify-content: center; /* adjust spacing between the two sections */
+align-items: center; /* vertically center the icons and text */
+}
+
+.whereandwhen .where,
+.whereandwhen .when {
+display: flex;
+align-items: center;
+}
+
+.whereandwhen .icon {
+margin-right: 10px;
+width: 30px;
+align-self: center;
+/* add some space between the icon and text */
+}
+
+.whereandwhen .text h3 {
+margin-bottom: 0; /* remove extra space between the h3 and p elements */
+}
+
+.whereandwhen .text p {
+margin: 5px 0; /* add consistent spacing around the p element */
+}
+
+#Highlights {
+/* background-color: #f5f5f5; */
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 10px rgba(219, 90, 4, 0.856);
+margin: 20px 0px;
+overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+#Highlights h2 {
+text-align: center;
+margin-bottom: 30px;
+color: #FF5733;
+font-weight: bold;
+}
+
+#Highlights ul {
+list-style: none;
+padding: 0;
+margin: 0;
+text-align: left;
+}
+
+#Highlights li {
+margin-bottom: 10px;
+padding-left: 30px; /* Increased padding for better separation */
+position: relative;
+}
+
+#Highlights li::before {
+content: '';
+position: absolute;
+left: 0;
+top: 8px; /* Adjusted positioning */
+width: 12px; /* Slightly increased size */
+height: 12px; /* Slightly increased size */
+background-color: #6ab7ff; /* Brighter color */
+border-radius: 50%;
+}
+
+#Highlights li p {
+margin: 0;
+color: #555; /* Slightly lighter color for better contrast */
+font-weight: bold;
+}
+
+#Highlights li ul {
+padding-left: 30px;
+margin-top: 10px;
+}
+
+#Highlights li ul li::before {
+content: '';
+position: absolute;
+left: 8px; /* Adjusted position */
+top: 4px; /* Adjusted position */
+width: 6px; /* Slightly increased size */
+height: 6px; /* Slightly increased size */
+background-color: #6ab7ff; /* Brighter color */
+border-radius: 50%;
+}
+
+
+
+#guidelines {
+padding: 20px;
+background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+box-shadow: 0 0 10px rgba(0, 0,  0, 0.1);
+text-align: justify;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+/* Sets the width for the accordion. Sets the margin to 90px on the top and bottom and auto to the left and right */
+
+.accordion {
+/* width: 800px;
+margin: 90px auto; */
+color: black;
+background-color: white;
+padding: 45px 45px;
+}
+
+.accordion .container {
+position: relative;
+margin: 10px 10px;
+}
+
+
+
+/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+.accordion .label {
+position: relative;
+padding: 10px 0;
+font-size: 20px;
+color: black;
+cursor: pointer;
+}
+
+.accordion .label::before {
+content: '+';
+color: black;
+position: absolute;
+top: 50%;
+right: -5px;
+font-size: 25px;
+transform: translateY(-50%);
+}
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+.accordion .content {
+position: relative;
+background: white;
+height: 0;
+font-size: 15px;
+text-align: justify;
+width: 780px;
+overflow: hidden;
+transition: 0.5s;
+}
+
+/* Adds a horizontal line between the contents */
+
+.accordion hr {
+width: 100;
+margin-left: 0;
+border: 1px solid grey;
+}
+
+.accordion .container.active .content {
+height: 150px;
+}
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .container.active .label::before {
+content: '-';
+font-size: 30px;
+}
+
+
+/* .committee-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+ 
+}
+.committee {
+  margin-bottom: 20px;
+}
+.committee h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+.committee-members {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.committee-members li {
+  margin-bottom: 5px;
+}
+.committee-members li strong {
+  font-weight: bold;
+} */
+
+.winners 1 {
+  background-color: #0275d8; /* Better background color */
+  padding: 20px;
+  margin: 20px auto;
+  /* border-radius: 8px; */
+  /* max-width: 850px; */
+  box-shadow: 0 0 30px rgba(232, 28, 28, 0.863);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the items horizontally */
+  justify-content: center; /* Centers the items vertically */
+}
+
+.winners h2 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+    .winners table {
+        width: 800px;
+        border-collapse: collapse;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .winners th,
+    .winners td {
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #fff;
+    }
+
+    .winners th {
+        text-align: left;
+    }
+
+    .winners thead th {
+        background-color: #55608f;
+    }
+
+    .winners tbody tr:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .winners tbody td {
+        position: relative;
+    }
+
+    .winners tbody td:hover::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -9999px;
+        bottom: -9999px;
+        background-color: rgba(255, 255, 255, 0.2);
+        z-index: -1;
+    } 
+    
+    
+
+    .winner {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .winner2023 {
+    width: 48%;
+    background-color: #0275d8;
+    }
+
+    .winner2024 {
+      width: 48%;
+      margin-left: auto;
+      background-color: #0275d8;
+      max-height: 520px;
+      overflow: scroll;
+    }
+
+
+#gallery{
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+
+  }
+  
+
+  .gallery-carousel .item {
+margin: 10px;
+}
+
+.gallery-carousel .item img {
+width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+.footer-distributed{
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+content: "|";
+font-weight:300;
+font-size: 20px;
+left: 0;
+color: #fff;
+display: inline-block;
+padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+      font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+      margin-left: 0;
+  }
+
+}
+
